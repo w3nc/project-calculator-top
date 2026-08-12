@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+input {
+  width: 24.5rem; /* was 25rem, makes room for the two half buttons */
+  border: 1px solid black;
+}
+
+.half {
+  width: 4rem; /* C and backspace sit side by side */
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+#box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.4rem;
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button,
+input {
+  height: 4rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+button {
+  width: 8rem;
+  border: none;
+  background-color: rgb(2, 2, 2);
+  color: #f0f0f0;
+}
+
+input {
+  width: 25rem;
+  border: 1px solid black;
+}
